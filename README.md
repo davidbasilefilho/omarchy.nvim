@@ -51,7 +51,9 @@ This README documents the Neovim/LazyVim portion of that setup and adapts the ed
 2. Place this repository's files in your Neovim config directory. Example (from your home):
 
    - Clone directly into place:
-     git clone "https://github.com/davidbasilefilho/omarchy.nvim" ~/.config/nvim
+   ```bash
+   git clone "https://github.com/davidbasilefilho/omarchy.nvim" ~/.config/nvim
+   ```
 
    - Or copy the files into `~/.config/nvim`.
 

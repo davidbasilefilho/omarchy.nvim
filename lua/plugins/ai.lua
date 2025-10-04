@@ -66,6 +66,21 @@ return {
           },
         },
       },
+      web_search_engine = {
+        provider = "tavily",
+        proxy = nil,
+        providers = {
+          tavily = {
+            api_key_name = "TAVILY_API_KEY",
+            extra_request_body = {
+              include_answer = "basic",
+            },
+            format_response_body = function(body)
+              return body.answer, nil
+            end,
+          },
+        },
+      },
       system_prompt = function()
         local hub = require("mcphub").get_hub_instance()
         return hub and hub:get_active_servers_prompt() or ""
